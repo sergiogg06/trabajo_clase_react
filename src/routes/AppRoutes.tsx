@@ -1,5 +1,6 @@
 
-import { Productos } from "@/pages/www/productos/Productos";
+import { ProductoPage } from "@/pages/www/productos/ProductoPage";
+import { ProductosPage } from "@/pages/www/productos/ProductosPage";
 import Home from "@/pages/www/site/Home";
 import Qsomos from "@/pages/www/site/Qsomos";
 import Servicios from "@/pages/www/site/Servicios";
@@ -11,7 +12,8 @@ const AppRoutes = () => {
        <Route path="/" element={<Home />} />
        <Route path="/qsomos" element={<Qsomos />} />
        <Route path="/servicios" element={<Servicios />} />
-       <Route path="/productos" element={<Productos />} />
+       <Route path="/productos" element={<ProductosPage />} />
+       <Route path="/productos/:id" element={<ProductoPage />} />
     </Routes>
   )
 }
